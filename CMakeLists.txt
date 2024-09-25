@@ -1,3 +1,6 @@
+# Do `ctrl+f` and search for `NOTE` to find all changes that I have made to ->
+#-> the `CMakeLists.txt` file.
+#
 # cmake arguments
 # CMAKE_BUILD_TYPE:         Compilation target (Debug or Release defaults to Debug)
 #
@@ -217,6 +220,8 @@ target_include_directories(${PROJECT_NAME} ${GODOT_SYSTEM_HEADERS_ATTRIBUTE} PUB
 	include
 	${CMAKE_CURRENT_BINARY_DIR}/gen/include
 	${GODOT_GDEXTENSION_DIR}
+#NOTE: ADDED THIS LINE FOR `nlohmann/json`.
+	${CMAKE_CURRENT_SOURCE_DIR}/include/nlohmann
 )
 
 # Add the compile flags
